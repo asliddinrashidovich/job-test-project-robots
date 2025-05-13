@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Tektur';
+  src: url('./assets/fonts/Tektur-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Tektur', sans-serif;
+}
+
+.kurs_select {
+  border: 1px solid #FFDE00;
+  color: #FFDE00;
+  padding: 8px 22px !important;
+  outline: none;
+  border-radius: 25px;
+  width: 140px;
+}
+.kurs_option {
+  border: 1px solid #FFDE00 !important;
+  color: #FFDE00 !important;
+  padding: 8px 22px !important;
+  background-color: transparent !important;
+}
+.header_button {
+  backdrop-filter: blur(32.79999923706055px)
+}
+.hero_img {
+  background-image: url(../public/images/bg_hero.png);
+}

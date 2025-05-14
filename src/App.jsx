@@ -2,6 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import MainLayout from "./layout/main-layout"
 import MainPage from "./pages/main-page"
 import NotfoundPage from "./pages/notfound"
+import FormRequestPage from "./pages/form-request-page"
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
     createRoutesFromElements(
         <Route path="/" element={<MainLayout/>}>
           <Route index element={<MainPage/>}/>
+          <Route path="form" element={<FormRequestPage/>}/>
           <Route path="*" element={<NotfoundPage/>}/>
         </Route>
       )
